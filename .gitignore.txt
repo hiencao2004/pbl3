@@ -1,0 +1,21 @@
+# Bỏ thư mục build và các file biên dịch tạm
+/build/
+/CMakeFiles/
+/cmake-build-*/
+
+# Bỏ file cấu hình VSCode, CLion...
+.vscode/
+.idea/
+
+# Bỏ thư mục ESP-IDF tạo tạm
+/idf/
+/.idf/
+
+# Bỏ log, cache
+*.log
+*.elf
+*.map
+
+# Python cache
+__pycache__/
+*.pyc

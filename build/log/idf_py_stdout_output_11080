@@ -1,0 +1,131 @@
+Command: d:\ESP-IDF_Tools\python_env\idf5.5_py3.11_env\Scripts\python.exe d:\ESP-IDF_Tools\Espressif\releases\esp-idf-v5.5\v5.5\esp-idf\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\ESP-Project1\Project-Based-Learning\build\ds18b20_read.elf D:\ESP-Project1\Project-Based-Learning\build\bootloader\bootloader.elf --force-color -m 'd:\ESP-IDF_Tools\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'd:\ESP-IDF_Tools\Espressif\releases\esp-idf-v5.5\v5.5\esp-idf\tools\idf.py' '-p' 'COM4'
+�H(
+B��J��ѹesp32: SPI Flashets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  5 2025 20:28:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (37) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ecc0h (126144) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=0002ece8 vaddr=3ff80000 size=00020h (    32) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002ed10 vaddr=3ffb0000 size=01308h (  4872) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=a14a0h (660640) map[0m
+[0;32mI (368) esp_image: segment 4: paddr=000d14c8 vaddr=3ffb1308 size=02c20h ( 11296) load[0m
+[0;32mI (372) esp_image: segment 5: paddr=000d40f0 vaddr=40080000 size=17f50h ( 98128) load[0m
+[0;32mI (422) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (423) boot: Disabling RNG early entropy source...[0m
+[0;32mI (433) cpu_start: Multicore app[0m
+[0;32mI (441) cpu_start: Pro cpu start user code[0m
+[0;32mI (441) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (442) app_init: Project name:     ds18b20_read[0m
+[0;32mI (446) app_init: App version:      febfe76-dirty[0m
+[0;32mI (450) app_init: Compile time:     Oct  5 2025 20:28:31[0m
+[0;32mI (455) app_init: ELF file SHA256:  ea21e5ad0...[0m
+[0;32mI (460) app_init: ESP-IDF:          v5.5[0m
+[0;32mI (463) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (467) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (471) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (475) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (481) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (486) heap_init: At 3FFB8648 len 000279B8 (158 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097F50 len 000080B0 (32 KiB): IRAM[0m
+[0;32mI (509) spi_flash: detected chip: generic[0m
+[0;32mI (511) spi_flash: flash io: dio[0m
+[0;33mW (514) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (528) main_task: Started on CPU0[0m
+[0;32mI (538) main_task: Calling app_main()[0m
+[0;32mI (568) wifi:wifi driver task: 3ffc1268, prio:23, stack:6656, core=0[0m
+[0;32mI (578) wifi:wifi firmware version: f3dbad7[0m
+[0;32mI (578) wifi:wifi certification version: v7.0[0m
+[0;32mI (578) wifi:config NVS flash: enabled[0m
+[0;32mI (578) wifi:config nano formatting: disabled[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (588) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (588) wifi:Init management short buffer num: 32[0m
+[0;32mI (598) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (608) wifi:Init static rx buffer num: 10[0m
+[0;32mI (608) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (618) wifi_init: rx ba win: 6[0m
+[0;32mI (618) wifi_init: accept mbox: 6[0m
+[0;32mI (618) wifi_init: tcpip mbox: 32[0m
+[0;32mI (618) wifi_init: udp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp tx win: 5760[0m
+[0;32mI (628) wifi_init: tcp rx win: 5760[0m
+[0;32mI (638) wifi_init: tcp mss: 1440[0m
+[0;32mI (638) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (638) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (648) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (728) wifi:mode : sta (78:1c:3c:2b:c5:64) + softAP (78:1c:3c:2b:c5:65)[0m
+[0;32mI (728) wifi:enable tsf[0m
+[0;32mI (738) wifi:Total power save buffer number: 16[0m
+[0;32mI (738) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (738) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (748) ESPNOW: espnow [version: 2.0] init[0m
+[0;32mI (748) GATEWAY_DS18B20: Current WiFi channel: 9[0m
+[0;32mI (748) GATEWAY_DS18B20: Peer added: A0:A3:B3:A9:E9:34[0m
+[0;32mI (758) wifi:ap channel adjust o:1,1 n:9,2[0m
+[0;32mI (758) wifi:new:<9,0>, old:<1,1>, ap:<9,2>, sta:<9,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (768) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (778) main_task: Returned from app_main()[0m
+[0;32mI (778) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (788) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (828) wifi:connected with Hieu Nguyen, aid = 10, channel 9, BW20, bssid = 68:9e:29:a4:42:86[0m
+[0;32mI (828) wifi:security: WPA2-PSK, phy: bgn, rssi: -61[0m
+[0;32mI (838) wifi:pm start, type: 1[0m
+
+[0;32mI (838) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (848) wifi:<ba-add>idx:0 (ifx:0, 68:9e:29:a4:42:86), tid:0, ssn:2, winSize:64[0m
+[0;32mI (928) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1778) GATEWAY_DS18B20: [DS18B20] Raw: FF FF FF FF FF FF FF FF FF[0m
+[0;33mW (1778) GATEWAY_DS18B20: [DS18B20] ⚠️ CRC error! expected C9 got FF[0m
+[0;33mW (1788) GATEWAY_DS18B20: MQTT not connected, skipping publish[0m
+[0;32mI (1788) GATEWAY_DS18B20: 🚀 Sent ESP-NOW fire alert to peer: 0[0m
+ESP-NOW send status: Fail
+[0;32mI (4188) esp_netif_handlers: sta ip: 192.168.1.78, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4188) GATEWAY_DS18B20: Wi-Fi got IP. Starting MQTT client...[0m
+[0;32mI (4418) GATEWAY_DS18B20: MQTT connected[0m
+[0;32mI (4798) GATEWAY_DS18B20: [DS18B20] Raw: FF FF FF FF FF FF FF FF FF[0m
+[0;33mW (4798) GATEWAY_DS18B20: [DS18B20] ⚠️ CRC error! expected C9 got FF[0m
+[0;32mI (4808) GATEWAY_DS18B20: Published: {"temperature": 25.00}[0m
+[0;32mI (7808) GATEWAY_DS18B20: [DS18B20] Raw: FF FF FF 7F FF FF FF FF FF[0m
+[0;33mW (7818) GATEWAY_DS18B20: [DS18B20] ⚠️ CRC error! expected 02 got FF[0m
+[0;32mI (7818) GATEWAY_DS18B20: Published: {"temperature": 25.00}[0m
+[0;32mI (10818) GATEWAY_DS18B20: [DS18B20] Raw: FF FF FF FF FF FF FF FF FF[0m
+[0;33mW (10818) GATEWAY_DS18B20: [DS18B20] ⚠️ CRC error! expected C9 got FF[0m
+[0;32mI (10828) GATEWAY_DS18B20: Published: {"temperature": 25.00}[0m
+[0;32mI (13828) GATEWAY_DS18B20: [DS18B20] Raw: FF FF FF FF FF FF FF FF FF[0m
+[0;33mW (13838) GATEWAY_DS18B20: [DS18B20] ⚠️ CRC error! expected C9 got FF[0m
+[0;32mI (13838) GATEWAY_DS18B20: Published: {"temperature": 25.00}[0m
+[0;32mI (16838) GATEWAY_DS18B20: [DS18B20] Raw: FF FF FF FF FF FF FF FF FF[0m
+[0;33mW (16838) GATEWAY_DS18B20: [DS18B20] ⚠️ CRC error! expected C9 got FF[0m
+[0;32mI (16848) GATEWAY_DS18B20: Published: {"temperature": 25.00}[0m
+[0;32mI (19848) GATEWAY_DS18B20: [DS18B20] Raw: FF FF FF FF FF FF FF FF FF[0m
+[0;33mW (19848) GATEWAY_DS18B20: [DS18B20] ⚠️ CRC error! expected C9 got FF[0m
+[0;32mI (19858) GATEWAY_DS18B20: Published: {"temperature": 25.00}[0m
+[0;32mI (22858) GATEWAY_DS18B20: [DS18B20] Raw: FF FF FF FF FF FF FF FF FF[0m
+[0;33mW (22868) GATEWAY_DS18B20: [DS18B20] ⚠️ CRC error! expected C9 got FF[0m
+[0;32mI (22868) GATEWAY_DS18B20: Published: {"temperature": 25.00}[0m

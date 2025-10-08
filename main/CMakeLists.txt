@@ -1,0 +1,18 @@
+idf_component_register(
+    SRCS 
+        "ds18b20_read.c"
+    INCLUDE_DIRS 
+        "."
+    REQUIRES 
+        esp_wifi
+        esp_event
+        nvs_flash
+        mqtt
+        lwip
+        freertos
+        driver
+        log
+        esp_system
+        mq2
+        ds18b20
+)
