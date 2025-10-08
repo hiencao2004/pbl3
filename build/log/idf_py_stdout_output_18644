@@ -1,8 +1,0 @@
-Command: ninja all
-[0/1] Re-running CMake...
--- Minimal build - OFF
--- ccache will be used for faster recompilation
--- Building ESP-IDF components for target esp32
--- Configuring incomplete, errors occurred!
-FAILED: build.ninja 
-D:\ESP-IDF_Tools\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SD:\ESP-Project1\Project-Based-Learning -BD:\ESP-Project1\Project-Based-Learning\build

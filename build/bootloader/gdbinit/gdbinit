@@ -1,2 +1,2 @@
-source D:/ESP-Project1/Project-Based-Learning/build/bootloader/gdbinit/symbols
-source D:/ESP-Project1/Project-Based-Learning/build/bootloader/gdbinit/connect
+source C:/Users/dinht/prj/pbl3/build/bootloader/gdbinit/symbols
+source C:/Users/dinht/prj/pbl3/build/bootloader/gdbinit/connect

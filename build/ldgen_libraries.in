@@ -159,9 +159,11 @@ $<TARGET_FILE:idf::wifi_provisioning>
 $<TARGET_FILE:__idf_json>
 $<TARGET_FILE:idf::mq2>
 $<TARGET_FILE:idf::ds18b20>
+$<TARGET_FILE:idf::flame_sensor>
+$<TARGET_FILE:idf::rf>
 $<TARGET_FILE:idf::main>
 $<TARGET_FILE:__idf_mqtt>
 $<TARGET_FILE:__idf_mq2>
 $<TARGET_FILE:__idf_ds18b20>
-$<TARGET_FILE:idf::flame_sensor>
-$<TARGET_FILE:idf::rf>
+$<TARGET_FILE:__idf_flame_sensor>
+$<TARGET_FILE:__idf_rf>

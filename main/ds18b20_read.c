@@ -1,25 +1,41 @@
+/* Standard C/C++ Libraries */
 #include <stdio.h>
 #include <string.h>
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "driver/gpio.h"
-#include "esp_log.h"
-#include "esp_system.h"
-#include "esp_wifi.h"
-#include "esp_event.h"
-#include "esp_netif.h"
-#include "mqtt_client.h"
-#include "esp_now.h"
-#include "esp_timer.h"
-#include "nvs_flash.h"
-#include "rom/ets_sys.h"
-#include "ds18b20.h"
-#include "mq2_sensor.h"
 #include <math.h>
 #include <time.h>
+
+/* FreeRTOS Libraries */
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 #include "freertos/semphr.h"
 #include "freertos/queue.h"
 #include "freertos/event_groups.h"
+
+/* ESP-IDF Core & System Libraries */
+#include "esp_system.h"
+#include "esp_log.h"
+#include "nvs_flash.h"
+#include "nvs.h"
+#include "esp_timer.h"
+#include "rom/ets_sys.h"
+
+/* ESP-IDF Driver Libraries */
+#include "driver/gpio.h"
+
+/* ESP-IDF Network Libraries */
+#include "esp_netif.h"
+#include "esp_event.h"
+#include "esp_wifi.h"
+#include "esp_now.h"
+#include "mqtt_client.h"
+
+/* Custom Component & Sensor Libraries */
+#include "ds18b20.h"
+#include "mq2_sensor.h"
+#include "flame_sensor.h"
+#include "RCSwitch.h"
+
+
 // ============================
 // --- CONFIG ---
 // ============================

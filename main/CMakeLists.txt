@@ -15,4 +15,6 @@ idf_component_register(
         esp_system
         mq2
         ds18b20
+        flame_sensor
+        rf
 )
