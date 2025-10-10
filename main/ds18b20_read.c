@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> f2c9944c922d1b8c06bc85b6494fe7599c63e38c
 /* Standard C/C++ Libraries */
 #include <stdio.h>
 #include <string.h>
